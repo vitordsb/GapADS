@@ -173,7 +173,10 @@
         text-align: center;
     }
     .services-box {
-        grid-template-columns: 1fr;  /* Altera para uma única coluna */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 10px;
     }
     .service-card {

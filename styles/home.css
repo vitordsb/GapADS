@@ -1,173 +1,220 @@
-/* ===== Estilos Base ===== */
 .line-shape {
-    background: rgb(41, 41, 41);
-    margin-top: -100px;
-    height: 11vh;
-    position: relative;
-    z-index: 0;
-    color: white;
+  background: rgb(41, 41, 41);
+  margin-top: -100px;
+  height: 11vh;
+  position: relative;
+  z-index: 0;
+  color: white;
+}
+
+.contagens {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contagem {
+  flex-direction: column;
+  background-color: #481C9E;
+  padding: 25px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 }
 
 .main-container {
-    background-color: rgb(41, 41, 41);
-    height: 60vh;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  background-color: rgb(41, 41, 41);
+  height: 80vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .main-container h1 {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .main-box-container {
-    margin-top: 80px;
-    gap: 10px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #481C9E;
+  margin-top: 50px;
+  gap: 10px;
+  flex-direction: column;
+  padding: 40px;
+  display: flex;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #481C9E;
+}
+
+.cards {
+  display: flex;
 }
 
 .cardContainer {
-    border: 1px solid white;
-    padding: 20px;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    align-items: center;
-    width: 400px;
-    justify-content: center;
-    height: 200px;
+  border: 1px solid white;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  justify-content: center;
+  height: 200px;
 }
 
 .cardbox p {
-    font-size: 20px;
-    width: auto;
+  font-size: 20px;
+  width: auto;
 }
-
 
 /* ===== Breakpoints para Computadores e Notebooks ===== */
 
-/* Para telas próximas a 1920x1080 */
+/* Resolução 1920x1080 */
 @media screen and (max-width: 1920px) {
-    .main-container h1 {
-        font-size: 45px;
-    }
-    .cardContainer {
-        width: 380px;
-        height: 190px;
-        padding: 18px;
-    }
-    .cardbox p {
-        font-size: 19px;
-    }
+  .main-container h1 {
+    font-size: 45px;
+  }
+  .cardContainer {
+    width: 380px;
+    height: 190px;
+    padding: 18px;
+  }
+  .cardbox p {
+    font-size: 19px;
+  }
 }
 
-/* Para telas próximas a 1720x960 */
+/* Resolução 1720x960 */
 @media screen and (max-width: 1720px) {
-    .main-container h1 {
-        font-size: 42px;
-    }
-    .cardContainer {
-        width: 360px;
-        height: 180px;
-        padding: 16px;
-    }
-    .cardbox p {
-        font-size: 18px;
-    }
+  .main-container h1 {
+    font-size: 42px;
+  }
+  .cardContainer {
+    width: 360px;
+    height: 180px;
+    padding: 16px;
+  }
+  .cardbox p {
+    font-size: 18px;
+  }
 }
 
-/* Para telas próximas a 1600x900 */
+/* Resolução 1600x900 */
 @media screen and (max-width: 1600px) {
-    .main-container h1 {
-        font-size: 38px;
-    }
-    .cardContainer {
-        width: 340px;
-        height: 170px;
-        padding: 14px;
-    }
-    .cardbox p {
-        font-size: 17px;
-    }
+  .main-container h1 {
+    font-size: 38px;
+  }
+  .cardContainer {
+    width: 340px;
+    height: 170px;
+    padding: 14px;
+  }
+  .cardbox p {
+    font-size: 17px;
+  }
 }
 
-/* Para telas próximas a 1280x720 */
+/* Resolução 1280x720 */
 @media screen and (max-width: 1280px) {
-    .main-container {
-        height: auto; /* Ajuste a altura se necessário */
-        padding: 20px 0;
-    }
-    .main-container h1 {
-        font-size: 34px;
-    }
-    .cardContainer {
-        width: 300px;
-        height: auto;
-        padding: 12px;
-    }
-    .cardbox p {
-        font-size: 16px;
-    }
-}
+  .main-container {
+    height: auto; /* Ajuste conforme a necessidade */
+    padding: 20px 0;
+  }
+  .contagem {
+    position: relative;
 
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .contagens {
+    width: 500px;
+    flex-direction: column;
+    position: relative;
+  }
+  .main-container h1 {
+    font-size: 34px;
+  }
+  .main-box-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 600px;
+  }
+  .cardContainer {
+    width: 300px;
+    height: auto;
+    padding: 12px;
+  }
+  .cardbox p {
+    font-size: 16px;
+  }
+}
 
 /* ===== Breakpoints para Tablets e Celulares ===== */
 
 /* Tablets (até 768px) */
 @media screen and (max-width: 768px) {
-    .line-shape {
-        margin-top: -50px;
-        height: 15vh;
-    }
-    .main-container {
-        height: auto;
-        padding: 20px;
-    }
-    .main-container h1 {
-        font-size: 28px;
-    }
-    .main-box-container {
-        flex-direction: column;
-        margin-top: 40px;
-    }
-    .cardContainer {
-        width: 90%;
-        height: auto;
-        padding: 15px;
-    }
-    .cardbox p {
-        font-size: 16px;
-    }
+  .line-shape {
+    margin-top: -50px;
+    height: 15vh;
+  }
+  .main-container {
+    height: auto;
+    padding: 20px;
+  }
+  .main-container h1 {
+    font-size: 28px;
+  }
+  .main-box-container {
+    width: 500px;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .contagens {
+    
+    flex-direction: column;
+  }
+  .cards {
+    align-items: center;
+    flex-direction: column;
+  }
+  .cardContainer {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+  }
+  .cardbox p {
+    font-size: 16px;
+  }
 }
 
 /* Celulares (até 480px) */
 @media screen and (max-width: 480px) {
-    .line-shape {
-        margin-top: -30px;
-        height: 18vh;
-    }
-    .main-container h1 {
-        font-size: 24px;
-        padding: 0 10px;
-        text-align: center;
-    }
-    .main-box-container {
-        padding: 10px;
-        margin-top: 30px;
-        flex-direction: column;
-    }
-    .cardContainer {
-        width: 95%;
-        padding: 10px;
-    }
-    .cardbox p {
-        font-size: 14px;
-        text-align: center;
-    }
+  .line-shape {
+    margin-top: -30px;
+    height: 18vh;
+  }
+  .main-container h1 {
+    font-size: 24px;
+    padding: 0 10px;
+    text-align: center;
+  }
+  .main-box-container {
+    padding: 10px;
+    margin-top: 30px;
+    flex-direction: column;
+  }
+  .cardContainer {
+    width: 95%;
+    padding: 10px;
+  }
+  .cardbox p {
+    font-size: 14px;
+    text-align: center;
+  }
 }
