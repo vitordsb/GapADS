@@ -1,4 +1,5 @@
-.initial-banner-orange{
+/* Estilo base para .initial-banner-orange e .banner-box-text */
+.initial-banner-orange {
     background-image: url(../images/imageMarketing.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,7 +22,6 @@
     z-index: 0;
 }
 
-
 .banner-box-text {
     z-index: 1;
     display: flex;
@@ -30,14 +30,17 @@
     flex-direction: column;
     margin-right: 350px;
 }
+
 .banner-box-text h1 {
     font-size: 50px;
     color: white;
 }
+
 .banner-box-text p {
     font-size: 20px;
     color: white;
 }
+
 .banner-box-text img {
     width: 300px;
 }
@@ -54,9 +57,94 @@
     font-size: 25px;
     color: white;
     font-weight: bolder;
-    transition: calc(.3s);
+    transition: 0.3s;
 }
+
 .banner-box-text a:hover {
     background-color: rgb(108, 0, 209);
     transform: scale(1.025);
+}
+
+/* --------- Breakpoints para computadores e notebooks --------- */
+
+/* Para telas próximas a 1920x1080 */
+@media screen and (max-width: 1920px) {
+    .banner-box-text {
+        width: 550px;
+        margin-right: 300px;
+    }
+    .banner-box-text h1 { font-size: 45px; }
+    .banner-box-text p { font-size: 18px; }
+    .banner-box-text img { width: 280px; }
+    .banner-box-text a { width: 320px; font-size: 23px; }
+}
+
+/* Para telas próximas a 1720x960 */
+@media screen and (max-width: 1720px) {
+    .banner-box-text {
+        width: 500px;
+        margin-right: 250px;
+    }
+    .banner-box-text h1 { font-size: 40px; }
+    .banner-box-text p { font-size: 16px; }
+    .banner-box-text a { width: 300px; font-size: 21px; }
+}
+
+/* Para telas próximas a 1600x900 */
+@media screen and (max-width: 1600px) {
+    .banner-box-text {
+        width: 450px;
+        margin-right: 200px;
+    }
+    .banner-box-text h1 { font-size: 35px; }
+    .banner-box-text p { font-size: 15px; }
+    .banner-box-text a { width: 280px; font-size: 20px; }
+}
+
+/* Para telas próximas a 1280x720 */
+@media screen and (max-width: 1280px) {
+    .banner-box-text {
+        width: 400px;
+        margin-right: 150px;
+    }
+    .banner-box-text h1 { font-size: 30px; }
+    .banner-box-text p { font-size: 14px; }
+    .banner-box-text a { width: 260px; font-size: 18px; }
+}
+
+/* --------- Breakpoints para tablets e celulares --------- */
+
+/* Para tablets (telas menores que 768px) */
+@media screen and (max-width: 768px) {
+    .initial-banner-orange {
+        clip-path: none; /* opcional: remover ou ajustar o clip-path para melhor encaixe */
+        height: 60vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-box-text {
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+    }
+    .banner-box-text h1 { font-size: 28px; }
+    .banner-box-text p { font-size: 16px; }
+    .banner-box-text img { width: 200px; }
+    .banner-box-text a {
+        width: auto;
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+}
+
+/* Para celulares (telas menores que 480px) */
+@media screen and (max-width: 480px) {
+    .initial-banner-orange {
+        height: 50vh;
+    }
+    .banner-box-text h1 { font-size: 24px; }
+    .banner-box-text p { font-size: 14px; }
+    .banner-box-text img { width: 150px; }
+    .banner-box-text a { font-size: 18px; }
 }

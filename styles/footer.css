@@ -1,0 +1,101 @@
+/* ===== Estilos Base da Footer ===== */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242424;
+    padding: 50px;
+    color: white;
+}
+
+.footer img {
+    width: 200px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links img {
+    width: 30px;
+    filter: invert(1);
+}
+
+.links a {
+    color: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+/* ===== Breakpoints para Computadores e Notebooks ===== */
+
+/* Para telas próximas a 1920x1080 e 1720x960 (ajustes leves) */
+@media screen and (max-width: 1920px) {
+    .footer {
+        padding: 40px;
+    }
+    .footer img {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 1720px) {
+    .footer {
+        padding: 35px;
+    }
+    .footer img {
+        width: 120px;
+    }
+}
+
+/* ===== Breakpoints para Tablets ===== */
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+        gap: 20px;
+    }
+    .footer img {
+        width: 150px;
+    }
+    .infos {
+        align-items: center;
+    }
+    .links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* ===== Breakpoints para Celulares ===== */
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 20px;
+    }
+    .footer img {
+        width: 130px;
+    }
+    .infos {
+        gap: 8px;
+    }
+    .links {
+        gap: 15px;
+    }
+    .links img {
+        width: 25px;
+    }
+    .links a {
+        gap: 8px;
+        font-size: 14px;
+    }
+}
