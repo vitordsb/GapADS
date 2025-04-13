@@ -1,0 +1,62 @@
+.initial-banner-orange{
+    background-image: url(../images/imageMarketing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    z-index: 1;
+    justify-content: end;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    position: relative;
+}
+.initial-banner-orange::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(55, 3, 90, 0.8);
+    z-index: 0;
+}
+
+
+.banner-box-text {
+    z-index: 1;
+    display: flex;
+    gap: 20px;
+    width: 600px;
+    flex-direction: column;
+    margin-right: 350px;
+}
+.banner-box-text h1 {
+    font-size: 50px;
+    color: white;
+}
+.banner-box-text p {
+    font-size: 20px;
+    color: white;
+}
+.banner-box-text img {
+    width: 300px;
+}
+
+.banner-box-text a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: blueviolet;
+    width: 350px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.411);
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    transition: calc(.3s);
+}
+.banner-box-text a:hover {
+    background-color: rgb(108, 0, 209);
+    transform: scale(1.025);
+}
