@@ -9,7 +9,7 @@
 }
 
 .footer img {
-    width: 200px;
+    width: 300px;
 }
 
 .infos {
@@ -23,8 +23,8 @@
     gap: 20px;
 }
 
-.links img {
-    width: 30px;
+.links a img {
+    width: 50px;
     filter: invert(1);
 }
 
@@ -44,7 +44,7 @@
         padding: 40px;
     }
     .footer img {
-        width: 100px;
+        width: 150px;
     }
 }
 
@@ -66,13 +66,13 @@
         gap: 20px;
     }
     .footer img {
-        width: 150px;
+        width: 100px;
     }
     .infos {
         align-items: center;
     }
     .links {
-        justify-content: center;
+        justify-content: space-around;
         flex-wrap: wrap;
     }
 }
@@ -80,6 +80,8 @@
 /* ===== Breakpoints para Celulares ===== */
 @media screen and (max-width: 480px) {
     .footer {
+        flex-direction: column;
+        text-align: center;
         padding: 20px;
     }
     .footer img {
@@ -89,13 +91,21 @@
         gap: 8px;
     }
     .links {
-        gap: 15px;
-    }
-    .links img {
-        width: 25px;
+        width: auto;
     }
     .links a {
-        gap: 8px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 15px;
+    }
+    .links a img {
+        width: 50px;
+    }
+    .links a {
+        width: auto;
         font-size: 14px;
     }
 }
