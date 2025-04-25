@@ -1,6 +1,6 @@
 .line-shape {
   background: rgb(41, 41, 41);
-  margin-top: -80px;
+  margin-top: -70px;
   position: relative;
   z-index: 0;
   color: white;
@@ -101,9 +101,13 @@
   }
   .contagens {
     width: auto;
+    flex-direction: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
   }
   .main-box-container {
-    width: 800px;
+    width: auto;
   }
   .cardContainer {
     width: 360px;
@@ -228,8 +232,17 @@
     flex-direction: column;
   }
   .cardContainer {
-    width: 95%;
-    padding: 10px;
+    width: 100%;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 30px;
+  }
+  .cardContainer h2 {
+    font-size: 20px;
+    text-align: center;
   }
   .cardbox p {
     font-size: 14px;
